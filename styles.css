@@ -1,0 +1,121 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(black 20%, blue 33%, green 33%); /* Fondo de tres colores */
+    background-size: 100% 300%; /* Ajusta el tamaño del fondo para dividirlo en 3 partes */
+    background-attachment: fixed; /* El fondo permanece estático */
+    background-position: top;
+}
+.header-superior{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    
+}
+.logo{
+    background-color: white;
+    font-weight: bold;
+    display: flex;
+    height: 100%;
+    min-height: 0;
+}
+.logo a{
+    flex: 1;
+    align-self: center;
+    padding-right: 1em;
+}
+.logo a p{
+    max-width: 100%;
+    flex-shrink: 1;
+}
+/* Navegación */
+.navbar ul li a{
+    color: white;
+    transition: 300ms;
+}
+.navbar ul li a:hover {
+    color: blueviolet;
+    transition: 300ms;
+}
+.navbar ul li a.activo {
+    color: #ff0066; /* Color rosa para el enlace activo */
+}
+.menu-label{
+    display: none;
+    color: white;
+}
+.menu-nav{
+    display: none;
+    width: 100%;
+    background: black;
+    color: white;
+    
+}
+
+.menu-checkbox{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar{
+        display: none;
+    }
+    .menu-label{
+        display:block;
+    }
+    .menu-checkbox:checked ~ .menu-nav {
+        display: block;
+    }
+}
+@media screen and (max-width: 280px){
+    .logo{
+        font-size: 5.5vw;
+    }
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* Contenido */
+.content {
+    margin-top: 60px; /* Espacio para que el contenido no se superponga a la navegación */
+    z-index: 2;
+    position: relative;
+    padding: 20px;
+}
+
+.section {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para las secciones */
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h1, .section h2 {
+    margin-top: 0;
+}
+
+/* Altura de la página para poder hacer scroll */
+.section {
+    height: 400px;
+}
