@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameShop</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo-icono.png" type="image/png">
 </head>
 <body>
-    <section class="section-1">
+    <section class="section-1 index">
         <header class="header-superior">
-            <span class="logo"><a href="#"><img src="img/logo.webp" alt="GameShop"></a></span>
-            <nav class="navbar">
+            <span class="logo"><a href="index.html"><img src="img/logo.png" alt="GameShop"></a></span>
+            <nav class="navbar navbar-general">
                 <ul>
                     <li><a href="#" class="activo">Inicio</a></li>
                     <li><a href="consolas.html">Consolas</a></li>
@@ -20,21 +21,20 @@
             </nav>
             <input type="checkbox" id="toggle" class="menu-checkbox">
             <label for="toggle" class="menu-label">Press me</label>
-            <nav class="menu-nav">
+            <nav class="menu-nav navbar-general">
                 <ul>
                     <li><a href="#" class="activo">Inicio</a></li>
-                    <li><a href="#">Consolas</a></li>
+                    <li><a href="consolas.html">Consolas</a></li>
                     <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>        
-            <section class="bienvenida">
-                <h6>¡Bienvenido a GameShop!</h6>
-                <h1>Los mejores juegos, <br>las mejores consolas <br>en el mejor lugar</h1>
-                <table></table>
-            </section>
-            <!-- o podria ser un flex con cuatro bloques -->
+        <section class="bienvenida">
+            <h6>¡Bienvenido a GameShop!</h6>
+            <h1>Los mejores juegos, <br>las mejores consolas <br>en el mejor lugar</h1>
+            <table></table>
+        </section>
     </section>
     <section class="producto-estrella">
         <div class="text-container">
@@ -53,47 +53,62 @@
             <h1>Productos</h1>
         </header>
         <div class="contenedor-productos">
-            <div class="carta-producto">
-                <div class="fondo-overlay">
+            <div class="carta-producto gift-card">
+                <div class="fondo-overlay"></div>
+                <div class="text-carta-producto">
+                    <h6>Computadoras Gamer</h6>
+                    <h1>Los mejores SetUps del mercado</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
-            <div class="carta-producto">
-                <div class="fondo-overlay">
+            <div class="carta-producto consolas">
+                <div class="fondo-overlay"></div>
+                <div class="text-carta-producto">
+                    <h6>Consolas</h6>
+                    <h1>Las mejores consolas</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
-            <div class="carta-producto">
-                <div class="fondo-overlay">
+            <div class="carta-producto videojuegos fondo-overlay">
+                <div class="fondo-overlay"></div>
+                <div class="text-carta-producto">
+                    <h6>Videojuegos</h6>
+                    <h1>Los últimos Videojuegos</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
-            <div class="carta-producto">
-                <div class="fondo-overlay">
-                    <p>dNFKAwfow</p>
+            <div class="carta-producto computadoras">
+                <div class="fondo-overlay"></div>
+                <div class="text-carta-producto">
+                    <h6>Computadoras Gamer</h6>
+                    <h1>Los mejores SetUps del mercado</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
         </div>
         <br>
     </section>
-    <section class="marcas section" style="color: white;">
-        <div class="texto-marcas">
+    <section class="marcas section">
+        <div class="texto-marcas text-container">
             <h6>Encuentra lo que buscas</h6>
             <h1>Marcas</h1>
         </div>
         <div class="tabla-marcas">
             <div class="fila-marcas">
-                <div class="carta-marca"></div>
-                <div class="carta-marca"></div>
-                <div class="carta-marca"></div>
-                <div class="carta-marca"></div>
+                <div class="carta-marca"> <img src="img/logos-marcas/nintendo-logo.png" alt="nintendo-logo"></div>
+                <div class="carta-marca"><img src="img/logos-marcas/playstation-logo.png" alt="playstation-logo"></div>
+                <div class="carta-marca"><img src="img/logos-marcas/xbox-logo.svg" alt="xbox-logo"></div>
+                <div class="carta-marca"><img src="img/logos-marcas/steam-logo.png" alt="steam-logo"></div>
             </div>
             <div class="fila-marcas">
-                <div class="carta-marca"></div>
-                <div class="carta-marca"></div>
-                <div class="carta-marca"></div>
-                <div class="carta-marca"></div>
+                <div class="carta-marca"><img src="img/logos-marcas/hp-logo.png" alt="hp-logo"></div>
+                <div class="carta-marca"><img src="img/logos-marcas/asus-logo.png" alt="asus-logo"></div>
+                <div class="carta-marca"><img src="img/logos-marcas/msi-logo.png" alt="msi-logo"></div>
+                <div class="carta-marca"><img src="img/logos-marcas/microsoft-logo.png" alt="microsoft-logo"></div>
             </div>
         </div>
     </section>
-    <section class="section-2">
+    <section class="section-2 index">
         <section class="codigo-promocion section">
             <p>Si tienes un código promocional insertalo aquí abajo y disfruta de increibles descuentos en todos nuestros productos</p>
             <div class="input-block">
@@ -103,11 +118,11 @@
             <a href="consolas.html"><button>VAMOS</button></a>
         </section>
         <footer class="footer-inferior">
-            <section class="logo-footer">
-                <span class="logo"><a href="#"><img src="img/logo.webp" alt="GameShop"></a></span>
+            <section class="marca">
+                <span class="logo"><a href="index.html"><img src="img/logo.png" alt="GameShop"></a></span>
                 <p class="copyright">Copyright © 2024 GameShop</p>
             </section>
-            <section class="links">
+            <section class="navbar-general links">
                 <h6>LINKS</h6>
                 <ul>
                     <li><a href="#" class="activo">Inicio</a></li>
@@ -119,12 +134,14 @@
             <section class="direccion">
                 <h6>DIRECCIÓN</h6>
                 <ul>
-                    <li>Inicio</li>
-                    <li>Consolas</li>
-                    <li>Nosotros</li>
-                    <li>Contacto</li>
+                    <div class="info-item">
+                        <p><i class="icon">📍</i><a href="#"> A: 104 Doyers St. 9 Arlington Dr. 150 SW Bay Blvd. </a></p>
+                        <hr>
+                        <p><i class="icon">📞</i><a href=""> 555-388-7890 </a></p>
+                        <hr>
+                        <p><i class="icon">✉️</i><a href=""> contact@info.com </a></p>
+                    </div>
                 </ul>
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime modi nihil molestiae doloribus sequi nam vero veritatis, quas saepe ut impedit quod pariatur hic odio illum consequatur aspernatur sed?</p> -->
             </section>
         </footer>
     </section>

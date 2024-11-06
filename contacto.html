@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameShop</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo-icono.png" type="image/png">
 </head>
 <body>
-    <section class="section-1">
+    <section class="section-1 contacto">
         <header class="header-superior">
-            <span class="logo"><a href="#"><img src="img/logo.webp" alt="GameShop"></a></span>
-            <nav class="navbar">
+            <span class="logo"><a href="index.html"><img src="img/logo.png" alt="GameShop"></a></span>
+            <nav class="navbar navbar-general">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="consolas.html">Consolas</a></li>
@@ -20,12 +21,12 @@
             </nav>
             <input type="checkbox" id="toggle" class="menu-checkbox">
             <label for="toggle" class="menu-label">Press me</label>
-            <nav class="menu-nav">
+            <nav class="menu-nav navbar-general">
                 <ul>
-                    <li><a href="#" class="activo">Inicio</a></li>
-                    <li><a href="#">Consolas</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="consolas.html">Consolas</a></li>
                     <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#" class="activo">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -66,10 +67,10 @@
 
     <footer class="footer-inferior">
         <section class="marca">
-            <span class="logo"><a href="#"><img src="img/logo.webp" alt="GameShop"></a></span>
+            <span class="logo"><a href="index.html"><img src="img/logo.png" alt="GameShop"></a></span>
             <p class="copyright">Copyright © 2024 GameShop</p>
         </section>
-        <section class="links">
+        <section class="navbar-general links">
             <h6>LINKS</h6>
             <ul>
                 <li><a href="#" class="activo">Inicio</a></li>
@@ -81,10 +82,13 @@
         <section class="direccion">
             <h6>DIRECCIÓN</h6>
             <ul>
-                <li>Inicio</li>
-                <li>Consolas</li>
-                <li>Nosotros</li>
-                <li>Contacto</li>
+                <div class="info-item">
+                    <p><i class="icon">📍</i><a href="#"> A: 104 Doyers St. 9 Arlington Dr. 150 SW Bay Blvd. </a></p>
+                    <hr>
+                    <p><i class="icon">📞</i><a href=""> 555-388-7890 </a></p>
+                    <hr>
+                    <p><i class="icon">✉️</i><a href=""> contact@info.com </a></p>
+                </div>
             </ul>
         </section>
     </footer>

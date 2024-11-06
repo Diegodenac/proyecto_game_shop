@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameShop</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo-icono.png" type="image/png">
 </head>
 <body>
-    <section class="section-1">
+    <section class="section-1 consolas">
         <header class="header-superior">
-            <span class="logo"><a href="#"><img src="img/logo.webp" alt="GameShop"></a></span>
-            <nav class="navbar">
+            <span class="logo"><a href="index.html"><img src="img/logo.png" alt="GameShop"></a></span>
+            <nav class="navbar navbar-general">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="#" class="activo">Consolas</a></li>
@@ -20,47 +21,60 @@
             </nav>
             <input type="checkbox" id="toggle" class="menu-checkbox">
             <label for="toggle" class="menu-label">Press me</label>
-            <nav class="menu-nav">
+            <nav class="menu-nav navbar-general">
                 <ul>
-                    <li><a href="#" class="activo">Inicio</a></li>
-                    <li><a href="#">Consolas</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#" class="activo">Consolas</a></li>
                     <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="section">
-            <section class="bienvenida">
-                <h6 style="color: white;">Bienvenido, es un gusto tenerte aqui!</h6>
-                <h1>Tu GAMESHOP preferido, <br>las mejores ofertas <br>y el mejor lugar</h1>
-                <table></table>
+        <section class="section-contacto">
+            <section class="contacto-header">
+                <h6>Nuestras opciones</h6>
+                <h1>Las mejores consolas</h1>
             </section>
-            <!-- o podria ser un flex con cuatro bloques -->
         </section>
     </section>
-                <section class="ofertas section">
-                    ofertas 
-                </section>
-                <section class="productos section">
-                    productos
-                </section>
-                <section class="juegos section">
-                    juegos
-                </section>
-                <section class="marcas section">
-                    marcas
-                </section>
-    <section class="section-2">
+    <section class="contenedor-producto">
+        <div class="text-container">
+            <h1>Play Station 5</h1>
+            <p>Proin at justo a diam rhoncus sodales. Duis finibus lobortis ornare. Quisque vulputate velit justo, nec tempus tortor condimentum non. Vestibulum leo leo, egestas a iaculis eget, laoreet ut tellus.</p>
+        </div>
+        <div class="image-container ps5">
+            <img src="img/ps5.png" alt="Alien Planet Image">
+        </div>
+    </section>
+    <section class="contenedor-producto left">
+        <div class="image-container left switch">
+            <img src="img/switch.png" alt="Alien Planet Image">
+        </div>
+        <div class="text-container">
+            <h1>Nintendo Switch</h1>
+            <p>Proin at justo a diam rhoncus sodales. Duis finibus lobortis ornare. Quisque vulputate velit justo, nec tempus tortor condimentum non. Vestibulum leo leo, egestas a iaculis eget, laoreet ut tellus.</p>
+        </div>
+    </section>
+    <section class="contenedor-producto">
+        <div class="text-container">
+            <h1>X-box Series X</h1>
+            <p>Proin at justo a diam rhoncus sodales. Duis finibus lobortis ornare. Quisque vulputate velit justo, nec tempus tortor condimentum non. Vestibulum leo leo, egestas a iaculis eget, laoreet ut tellus.</p>
+        </div>
+        <div class="image-container xbox">
+            <img src="img/xbox.png" alt="Alien Planet Image">
+        </div>
+    </section>
+    <section class="section-2 consolas">
         <section class="codigo-promocion">
-            <p>Si tienes un código promocional insertalo aquí abajo y disfruta de increibles descuentos en todos nuestros productos</p>
-            contactanos
+            <p>Contactanos</p>
+            <a href="contacto.html"><button>IR</button></a>
         </section>
         <footer class="footer-inferior">
             <section class="marca">
-                <span class="logo"><a href="#"><img src="img/logo.webp" alt="GameShop"></a></span>
+                <span class="logo"><a href="index.html"><img src="img/logo.png" alt="GameShop"></a></span>
                 <p class="copyright">Copyright © 2024 GameShop</p>
             </section>
-            <section class="links">
+            <section class="navbar-general links">
                 <h6>LINKS</h6>
                 <ul>
                     <li><a href="#" class="activo">Inicio</a></li>
@@ -72,12 +86,14 @@
             <section class="direccion">
                 <h6>DIRECCIÓN</h6>
                 <ul>
-                    <li>Inicio</li>
-                    <li>Consolas</li>
-                    <li>Nosotros</li>
-                    <li>Contacto</li>
+                    <div class="info-item">
+                        <p><i class="icon">📍</i><a href="#"> A: 104 Doyers St. 9 Arlington Dr. 150 SW Bay Blvd. </a></p>
+                        <hr>
+                        <p><i class="icon">📞</i><a href=""> 555-388-7890 </a></p>
+                        <hr>
+                        <p><i class="icon">✉️</i><a href=""> contact@info.com </a></p>
+                    </div>
                 </ul>
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime modi nihil molestiae doloribus sequi nam vero veritatis, quas saepe ut impedit quod pariatur hic odio illum consequatur aspernatur sed?</p> -->
             </section>
         </footer>
     </section>
