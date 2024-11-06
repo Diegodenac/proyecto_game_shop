@@ -237,10 +237,7 @@ body {
 }
 
 .section-1.contacto{
-    background-image: url('img/fondo-section1.jpg');
-}
-.section-2.contacto{
-    background-image: url('img/fondo-section123.webp');
+    background-image: url('img/fondo-section1-contacto.avif');
 }
 
 .section-1, .section-2{
