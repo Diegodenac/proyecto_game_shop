@@ -13,9 +13,9 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="#" class="activo">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="consolas.html">Consolas</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
             <input type="checkbox" id="toggle" class="menu-checkbox">
@@ -23,7 +23,7 @@
             <nav class="menu-nav">
                 <ul>
                     <li><a href="#" class="activo">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Consolas</a></li>
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
@@ -36,8 +36,22 @@
             </section>
             <!-- o podria ser un flex con cuatro bloques -->
     </section>
-    <section class="productos section" style="color: white;">
-        <h1>Productos</h1>
+    <section class="producto-estrella">
+        <div class="text-container">
+            <h6>Tendencia</h6>
+            <h1>¡Nuestro producto más vendido en el mes!</h1>
+            <p>Caracteristicas</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <a href="contacto.html"><button>COMPRAR</button></a>
+        </div>
+        <div class="image-container">
+            <img src="img/ps5-estrella.png" alt="Team Image">
+        </div>
+    </section>
+    <section class="productos" style="color: white;">
+        <header class="productos-header">
+            <h1>Productos</h1>
+        </header>
         <div class="contenedor-productos">
             <div class="carta-producto">
                 <div class="fondo-overlay">
@@ -58,14 +72,27 @@
             </div>
         </div>
         <br>
-
     </section>
-                <section class="juegos section">
-                    juegos
-                </section>
-                <section class="marcas section">
-                    marcas
-                </section>
+    <section class="marcas section" style="color: white;">
+        <div class="texto-marcas">
+            <h6>Encuentra lo que buscas</h6>
+            <h1>Marcas</h1>
+        </div>
+        <div class="tabla-marcas">
+            <div class="fila-marcas">
+                <div class="carta-marca"></div>
+                <div class="carta-marca"></div>
+                <div class="carta-marca"></div>
+                <div class="carta-marca"></div>
+            </div>
+            <div class="fila-marcas">
+                <div class="carta-marca"></div>
+                <div class="carta-marca"></div>
+                <div class="carta-marca"></div>
+                <div class="carta-marca"></div>
+            </div>
+        </div>
+    </section>
     <section class="section-2">
         <section class="codigo-promocion section">
             <p>Si tienes un código promocional insertalo aquí abajo y disfruta de increibles descuentos en todos nuestros productos</p>
@@ -73,10 +100,10 @@
                 <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx">
                 <small>Formato: xxxx-xxxx-xxxx-xxxx</small>
             </div>
-            <button><a href="productos.html">VAMOS</a></button>
+            <a href="consolas.html"><button>VAMOS</button></a>
         </section>
         <footer class="footer-inferior">
-            <section class="marca">
+            <section class="logo-footer">
                 <span class="logo"><a href="#"><img src="img/logo.webp" alt="GameShop"></a></span>
                 <p class="copyright">Copyright © 2024 GameShop</p>
             </section>
@@ -84,7 +111,7 @@
                 <h6>LINKS</h6>
                 <ul>
                     <li><a href="#" class="activo">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Consolas</a></li>
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
@@ -93,7 +120,7 @@
                 <h6>DIRECCIÓN</h6>
                 <ul>
                     <li>Inicio</li>
-                    <li>Productos</li>
+                    <li>Consolas</li>
                     <li>Nosotros</li>
                     <li>Contacto</li>
                 </ul>

@@ -70,9 +70,6 @@ body {
     }
 }
 @media screen and (max-width: 280px){
-    .logo{
-        font-size: 5.5vw;
-    }
     .footer-inferior{
         flex-direction: column;
         flex-wrap: wrap;
@@ -108,19 +105,138 @@ body {
     padding-bottom: 100px;
     flex-direction: row;
 }
+.contacto-header{
+    margin-top: 0px;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    color: white;
+}
+.section-contacto{
+    height: 25vh;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2b3a4b;
+    padding: 40px;
+}
+.info-item p {
+    margin-bottom: 10px;
+}
+.info-item hr {
+    border: none;
+    border-top: 1px solid #6c7284;
+    margin: 10px 0;
+    opacity: 0.5;
+    max-width: 400px;
+}
+.contact-info {
+    flex: 1;
+    padding-right: 20px;
+}
+.contact-info p {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+.contact-info a {
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.2s;
+}
+.contact-info a:hover{
+    color: purple;
+    transition: 0.3s;
+}
+.contact-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.contact-form {
+    flex: 1;
+    padding-left: 20px;
+    color: white;
+}
+.contact-form b{
+    color: red;
+}
+.contact-form.overlay-form {
+    background: #1c2a3a;
+    padding: 20px;
+    margin-top: -80px; /* Ajusta este valor para controlar la superposición */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+.form-group2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input[type="text"] {
+    width: 48%;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #fff;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+}
+.contact-form textarea{
+    resize: vertical;
+}
+
+/* .contact-form button[type="submit"] { 
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4e93e6;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+} */
+
+.contact-form button[type="submit"]:hover {
+    background-color: #3b79c2;
+}
+
 .bienvenida{
     margin-top: 120px;
     padding: 5%;
+    color: white;
 }
-.bienvenida h1{
+.bienvenida h1, .contacto-header h1{
     font-size: 60px;
     margin-top: 0;
-    color: white;
+}
+.contacto-header h6{
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 .bienvenida h6{
     font-size: 20px;
     margin-bottom: 10px;
-    color: white;
     height: 10vh;
 }
 .section-1{
@@ -140,7 +256,66 @@ body {
     margin: 0;
 }
 
-.marca{
+.producto-estrella{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    align-items: center;
+    color: #fff;
+}
+.producto-estrella .text-container {
+    flex: 1;
+    padding-right: 30px;
+}
+.producto-estrella .text-container h6 {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.producto-estrella .text-container h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.producto-estrella .text-container p {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 30px;
+}
+
+
+.marcas{
+    height: 100vh;
+    width: 100vw;
+}
+.texto-marcas{
+    width: 100%;
+    height: 20%;
+}
+.tabla-marcas{
+    width: 100%;
+    height: 60%;
+}
+.fila-marcas{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+.carta-marca{
+    background-color: #ff0066;
+    border: 2px solid white;
+    max-height: 100%;
+    aspect-ratio: 1;
+}
+.logo-footer{
     display: flex;
     flex-direction: column;
 }
@@ -159,24 +334,70 @@ body {
     color: black;
     align-items: center;
 }
-
+.productos{
+    height: 500px;
+    
+}
+.productos-header{
+    height: 25%;
+}
+.productos-header h1{
+    margin-top: 5px;
+}
 .contenedor-productos{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 70vh;
-    height: 200px;
+    height:75%;
 }
 .carta-producto{
-    min-width: 25%;
-    height: 200px;
     background-image: url('img/star.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
     padding: 0;
+}
+
+@media (max-width: 760px) {
+    .carta-producto {
+        width: 100%;
+        height: 25%;
+    }
+    .productos-header{
+        height: 5%;
+    }
+    .contenedor-productos{
+        height:95%;
+    }
+    .productos{
+        height: 2000px;
+    }
+    .contact-container, .producto-estrella{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: 760px) {
+    .carta-producto {
+        width: 50%;
+        height: 50%;
+    }
+    .productos-header{
+        height: 15%;
+    }
+    .contenedor-productos{
+        height: 85%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carta-producto {
+        width: 25%;
+        height: 100%;
+    }
 }
 
 .carta-producto .fondo-overlay{
@@ -198,6 +419,7 @@ body {
 
 /* Altura de la página para poder hacer scroll */
 .section {
+    max-height: 900px;
     height: 400px;
 }
 
@@ -213,11 +435,8 @@ body {
     text-align: center;
     margin-bottom: 10px;
 }
-.codigo-promocion button a{
-    text-decoration: none;
-    color: white;
-}
-.codigo-promocion button{
+
+.codigo-promocion button, .contact-form button[type="submit"], .producto-estrella .text-container button{
     background-color: transparent;
     border: 2px solid white;
     color: white;
@@ -228,6 +447,12 @@ body {
     font-size: 18px;     
     transition: all 0.3s ease;
     cursor: pointer;
+}
+
+.codigo-promocion button:hover, .contact-form button[type="submit"]:hover, .producto-estrella .text-container button:hover{
+    background-color: #ffffff;
+    color: #1f2b38;
+    transition: all 0.3s ease;
 }
 
 .input-block{
